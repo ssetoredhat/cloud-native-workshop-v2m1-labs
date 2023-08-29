@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 @MessageDriven(name = "InventoryNotificationMDB", activationConfig = {
         @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "topic/orders"),
         @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
-        @ActivationConfigProperty(propertyName = "transactionTimeout", propertyValue = "30"), #(1)
+        @ActivationConfigProperty(propertyName = "transactionTimeout", propertyValue = "30"),
         @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")})
 public class InventoryNotificationMDB implements MessageListener {
 
