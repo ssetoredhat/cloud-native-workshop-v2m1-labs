@@ -40,5 +40,3 @@ alter table ORDER_ITEMS
     references ORDERS;
 
 create sequence hibernate_sequence;
-create sequence orders_seq;
-create sequence order_items_seq;
