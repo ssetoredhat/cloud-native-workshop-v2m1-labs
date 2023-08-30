@@ -6,6 +6,7 @@
         <jta-data-source>java:jboss/datasources/CoolstoreDS</jta-data-source>
         <properties>
             <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+            <property name="hibernate.model.generator_name_as_sequence_name" value="false"/>
             <property name="hibernate.show_sql" value="false" />
         </properties>
     </persistence-unit>
